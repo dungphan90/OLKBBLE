@@ -1,6 +1,23 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# SofleKeyboard_LED_sk2812_SM
+#
+DEF SofleKeyboard_LED_sk2812_SM D 0 40 Y Y 1 F N
+F0 "D" 0 150 50 H V C CNN
+F1 "SofleKeyboard_LED_sk2812_SM" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 0 0 31 0 1 1 SK6812mini Normal 0 C C
+S 150 -100 -150 100 1 1 0 f
+X DOUT 1 -200 50 50 R 25 25 1 1 O
+X VSS 2 -200 -50 50 R 25 25 1 1 W
+X DIN 3 200 -50 50 L 25 25 1 1 I
+X VDD 4 200 50 50 L 25 25 1 1 W
+ENDDRAW
+ENDDEF
+#
 # keyboard_parts_D
 #
 DEF keyboard_parts_D D 0 40 Y Y 1 F N
@@ -29,6 +46,22 @@ C 200 0 50 0 1 0 N
 P 2 0 1 10 -200 50 150 150 N
 X ~ 1 300 0 50 L 60 60 1 1 P
 X ~ 2 -300 0 50 R 60 60 1 1 P
+ENDDRAW
+ENDDEF
+#
+# symbols_0.91_oled_128x32
+#
+DEF symbols_0.91_oled_128x32 U 0 40 Y Y 1 F N
+F0 "U" 450 -100 60 H V C CNN
+F1 "symbols_0.91_oled_128x32" 500 50 60 H V C CNN
+F2 "" 0 -100 60 H I C CNN
+F3 "" 0 -100 60 H I C CNN
+DRAW
+S -150 200 950 -200 0 1 0 N
+X GND 1 -350 150 200 R 50 50 1 1 w
+X VCC 2 -350 50 200 R 50 50 1 1 W
+X SCL 3 -350 -50 200 R 50 50 1 1 B
+X SDA 4 -350 -150 200 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
